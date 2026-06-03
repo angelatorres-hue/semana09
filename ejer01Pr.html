@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inversión y Restricción Estructural</title>
+    <style>
+        /* Elemento ROJO */
+        .en-linea {
+            border: 3px solid red;
+            padding: 5px;
+        }
+
+        /* Elemento VERDE */
+        .bloque {
+            border: 3px solid green;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Error de anidamiento (Bloque dentro de Línea)</h2>
+
+    <span class="en-linea">
+        Texto del SPAN (Línea)
+        
+        <div class="bloque">
+            Soy un DIV (Bloque) metido a la fuerza.
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Excepturi incidunt ex debitis maxime earum at eaque, 
+        eligendi quo fugiat aut quia laboriosam tempora ut 
+        deserunt sint unde, tempore nulla sapiente.
+    </span>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Caja 1: Sin espacio interno */
+.caja-sin-padding {
+    border: 3px double #333;
+    padding: 0px; 
+}
+
+/* Caja 2: Con espacio interno usando taquigrafía de 2 valores */
+.caja-con-padding {
+    border: 3px double #333;
+    padding: 20px 40px; /* 20px Arriba/Abajo, 40px Izquierda/Derecha */
+}

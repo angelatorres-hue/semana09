@@ -1,0 +1,21 @@
+/* Estilo base para todas las cajas */
+div {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+/* 4 VALORES: Arriba, Derecha, Abajo, Izquierda (Sentido del Reloj) */
+.caja-margin-4 {
+    margin: 10px 40px 20px 80px;
+}
+
+/* 3 VALORES: Arriba, (Derecha/Izquierda), Abajo */
+.caja-margin-3 {
+    margin: 30px 60px 15px;
+}
+
+/* 2 VALORES: (Arriba/Abajo), (Derecha/Izquierda) */
+.caja-margin-2 {
+    margin: 20px 50px;
+}

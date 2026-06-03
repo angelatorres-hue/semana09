@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú con Float y Clearfix</title>
+    <style>
+        .menu-contenedor::after {
+            content: "";
+            display: table;
+            clear: both; 
+        }
+        .item-menu {
+            float: left; 
+            width: 120px;
+            padding: 10px;
+            background-color: #34495e;
+            color:white;
+            text-align: center;
+        }
+        .contenido-siguiente {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-contenedor">
+        <div class="item-menu">Inicio</div>
+        <div class="item-menu">Servicios</div>
+        <div class="item-menu">Contacto</div>
+    </div>
+    <div class="contenido-siguiente">
+        <p>Este contenido se mantiene abajo de forma correcta y segura.</p>
+    </div>
+
+</body>
+</html>

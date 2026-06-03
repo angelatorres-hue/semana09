@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto 2 - Módulo de Blog</title>
+    <style>
+        /* 1. CONTENEDOR PRINCIPAL: Ancho máximo y centrado */
+        .contenedor-principal {
+            max-width: 800px;
+            margin: 0 auto; /* Márgenes dinámicos laterales para centrar */
+        }
+
+        /* TRUCO CLEARFIX: Necesario para que el contenedor no colapse por los floats */
+        .contenedor-principal::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 2, 3 y 4. ESTRUCTURA INTERNA, ALINEACIÓN Y MODELO DE CAJAS */
+        .articulo-blog {
+            float: left;            /* Flotación horizontal en paralelo */
+            width: 48%;             /* Ocupa exactamente el 48% disponible */
+            margin-right: 4%;       /* Margen lateral de separación */
+            border: 1px solid #000; /* Borde sólido */
+            padding: 15px;          /* Relleno interno perimetral */
+            box-sizing: border-box; /* Clave: Incluye el borde y padding dentro del 48% */
+        }
+
+        /* Quita el margen derecho del último artículo para evitar que sume más de 100% */
+        .articulo-blog:last-child {
+            margin-right: 0;
+        }
+
+        /* 5. DETALLE INLINE: Modificación de la fecha */
+        .fecha-publicacion {
+            color: #555555;         /* Cambio de color de fuente */
+            font-weight: bold;      /* Peso tipográfico resaltado */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+
+        <article class="articulo-blog">
+            <h2>Noticia Tecnológica</h2>
+            <p>Publicado el: <span class="fecha-publicacion">02 de Junio de 2026</span></p>
+            <p>Texto del primer artículo del blog. Este bloque se alinea a la izquierda de la pantalla.</p>
+        </article>
+
+        <article class="articulo-blog">
+            <h2>Actualización Web</h2>
+            <p>Publicado el: <span class="fecha-publicacion">01 de Junio de 2026</span></p>
+            <p>Texto del segundo artículo del blog. Este bloque se posiciona en paralelo al anterior.</p>
+        </article>
+
+    </div>
+
+</body>
+</html>
